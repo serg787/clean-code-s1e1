@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.basic-style {
   background-color: #f8f8f8;
   color: #333;
   font-family: lato, sans-serif;
@@ -12,7 +12,7 @@ body {
   text-align: right;
 }
 
-.eisenhower-matrix img {
+.eisenhower-img {
   width: 100%;
 }
 
@@ -42,16 +42,18 @@ body {
   display: flex;
 }
 
-ul {
+.complete-task {
   margin: 0;
   padding: 0px;
 }
 
-li, h3 {
+.li-style,
+.h3-style {
   list-style: none;
 }
 
-input, button {
+.input-style,
+.button-style {
   outline: none;
 }
 
