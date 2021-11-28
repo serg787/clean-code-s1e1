@@ -17,12 +17,12 @@
 }
 
 .eisenhower-matrix .more-inf {
-  font-family: fantasy, cursive;
+  font-family:fantasy, cursive;
 }
 
 @media (max-width: 768px) {
   .eisenhower-matrix {
-    text-align: center;
+    text-align:center;
   }
 }
 
@@ -56,8 +56,7 @@
 .button-style {
   outline: none;
 }
-
-button {
+.button-style {
   background: none;
   border: 0px;
   color: #888;
@@ -67,13 +66,13 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button-style:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.h3-style,
+.label-style {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -83,7 +82,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.input-style[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -96,22 +95,22 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.input-style[type="text"]:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.label-style[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
 
-input#new-task {
+.input-style#new-task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.li-style {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -121,51 +120,54 @@ li {
   align-items: center;
 }
 
-li > * {
+.li-style > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.li-style > .input-style[type="checkbox"] {
   margin: 0 10px;
 }
 
-li > label {
+.li-style > .label-style {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.li-style > .input-style[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+.button-style .img-remove{
   height: 2em;
   transform: rotatez(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.button-style .img-remove:hover {
   transform: rotatez(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.complete-task#completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.complete-task .li-style .input-style[type=text] {
   display: none;
 }
 
-ul li.edit-mode input[type=text] {
+.complete-task .li-style.edit-mode .input-style[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+.complete-task .li-style.edit-mode .label {
   display: none;
 }
+
+
+
