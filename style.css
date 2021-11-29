@@ -17,13 +17,13 @@
 }
 
 .eisenhower-matrix .more-inf {
-  font-family:fantasy, cursive;
+  font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
   
   .eisenhower-matrix {
-    text-align:center;
+    text-align: center;
   }
   
 }
@@ -46,7 +46,7 @@
 
 .complete-task {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 .li-style,
@@ -58,9 +58,10 @@
 .button-style {
   outline: none;
 }
+
 .button-style {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -73,8 +74,7 @@
 }
 
 /* Heading */
-.h3-style,
-.label-style {
+.h3-style, .label-style {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -140,7 +140,7 @@
   width: 226px;
 }
 
-.button-style .img-remove{
+.button-style .img-remove {
   height: 2em;
   transform: rotatez(45deg);
   transition: transform 200ms ease-in;
